@@ -1,12 +1,12 @@
 import React from 'react';
 
 const CitySuggestions = ({ data }) => {
-  const { id, name } = data;
+  const { id, cityName } = data;
 
   return (
     <div>
       <div>id: {id}</div>
-      <div>name: {name}</div>
+      <div>name: {cityName}</div>
     </div>
   );
 };

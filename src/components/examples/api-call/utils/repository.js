@@ -1,8 +1,8 @@
 import * as api from './api';
 import * as parser from './parser';
 
-export const getCityDetails = city =>
-  api.getCityDetails(city).then(({ data }) => parser.parseCityDetails(data));
+export const getCityDetails = cityName =>
+  api.getCityDetails(cityName).then(({ data }) => parser.parseCityDetails(data));
 
 export const searchRestaurants = cityEntityId =>
   api
