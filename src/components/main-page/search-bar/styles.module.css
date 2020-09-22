@@ -1,0 +1,9 @@
+.searchBar {
+    background: transparent;
+    color: #2b6cb0;
+    font-weight: 500;
+    border-bottom: 1px solid #fff;
+    width: 35%;
+    padding: 100;
+
+}
