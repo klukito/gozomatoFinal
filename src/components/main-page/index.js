@@ -4,13 +4,8 @@ import RestaurantCard from './restaurant-card'
 import DropdownHeader from './dropdown-header'
 import SearchBar from './search-bar'
 import SearchButton from './search-button'
-import { Heading, Button, Input } from '@chakra-ui/core';
-import styles from './styles.module.css';
+import { Heading } from '@chakra-ui/core';
 import ApiCall from 'components/examples/api-call'
-import {cityName} from 'components/api-call/components/city-suggestions';
-
-
-const ApiCall = () => Promise.resolve('hello world!');
 
 const Main = () => {
   const [cityQuery, setQuery] = useState();
@@ -43,7 +38,7 @@ const Main = () => {
           />    
       </div>
       <div>
-          Restaurants in {cityName}
+          Restaurants nearby:
           <div>
             {restaurants.map(e => (
               <RestaurantCard key={e.id} data={e} />

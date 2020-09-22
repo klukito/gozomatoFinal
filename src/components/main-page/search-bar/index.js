@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css'
-import Input from '@chakra-ui/core'
+
 
 const SearchBar = (data) => {
     const {value, placeholder, onChange} = data;
@@ -12,7 +12,7 @@ const SearchBar = (data) => {
             <label>
                 Your desired city: 
     
-            <Input className={styles.searchBar}
+            <input className={styles.searchBar}
                     placeholder={placeholder} 
                     value={value} 
                     onChange={onChange} 

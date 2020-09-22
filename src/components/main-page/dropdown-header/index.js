@@ -1,6 +1,7 @@
 import React from 'react';
 
 const DropdownHeader = () => {
+  return (
 <header>
 
     <meta charset="utf-8"/>
@@ -33,6 +34,7 @@ const DropdownHeader = () => {
   </nav>
 
 </header>
+  )
 }
 
 export default DropdownHeader

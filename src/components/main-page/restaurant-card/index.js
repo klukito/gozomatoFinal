@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Image} from '@chakra-ui/core';
+import { Box, Image, Badge, Icon} from '@chakra-ui/core';
 
 const RestaurantCard = ({ data }) => {
   const { city, name, picture, cuisines, priceRange, rating } = data;
@@ -32,7 +32,7 @@ const RestaurantCard = ({ data }) => {
           lineHeight="tight"
           isTruncated
         >
-          {property.title}
+          {name}
         </Box>
 
         <Box>
@@ -46,7 +46,7 @@ const RestaurantCard = ({ data }) => {
           {Array(5)
             .fill("")
             .map((_, i) => (
-              <StarIcon
+              <Icon name="star"
                 key={i}
                 color={i < rating ? "orange.500" : "gray.300"}
               />

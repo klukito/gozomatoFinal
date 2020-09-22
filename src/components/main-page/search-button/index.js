@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './styles.module.css'
-import 'assets/tailwind.config.js'
 
 
 function SearchButton({text, onClick}) {
