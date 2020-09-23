@@ -5,16 +5,17 @@ import DropdownHeader from './dropdown-header'
 import SearchBar from './search-bar'
 import SearchButton from './search-button'
 import { Heading } from '@chakra-ui/core';
-import ApiCall from 'components/examples/api-call'
+// import ApiCall from 'components/examples/api-call'
+import restaurantsResponse from './__mocks__/restaurants.json';
 
 const Main = () => {
   const [cityQuery, setQuery] = useState();
-  const [restaurants, setRestaurants] = useState();
+  const [restaurants, setRestaurants] = useState([]);
 
   useEffect(() => {
-    ApiCall().then(setQuery);
+    // ApiCall().then(setQuery);
+    setRestaurants(restaurantsResponse);
   }, []);
-  
 
   return (
     <div>
