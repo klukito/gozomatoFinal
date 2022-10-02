@@ -1,3 +1,3 @@
 **GoZomato**
 
-Simple website that generates restaurants in a desired city.
+A website that generates restaurants in a desired city.
